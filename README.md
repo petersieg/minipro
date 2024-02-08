@@ -102,14 +102,6 @@ $ hexdump firmware.bin
 0008000
 ```
 
-### Programming GALs
-
-The ATF22V10C GALs are supported by the same cheap XGecu TL866IIplus programmer. Note that you need the new version TL866II+. The old TL866 cannot program those chips. 
-You do need to compile the described logic equations (in a .pld file), with Atmel's WinCUPL program, to get output programming file (.jed).
-The .jed file must be programmed into the GALs. This can be done using minipro:
-
-    $ minipro -p atf22v10c -w file.jed  
-
 
 ### Working with AVR using In Circuit Serial Programming (ICSP)
 
@@ -156,6 +148,16 @@ $ ls -la
 ```
 
 You can use `-I` instead of `-i` to use ICSP with VCC disabled.
+
+
+### Programming GALs
+
+The ATF22V10C GALs are supported by the same cheap XGecu TL866IIplus programmer. Note that you need the new version TL866II+. The old TL866 cannot program those chips. 
+You do need to compile the described logic equations (in a .pld file), with Atmel's WinCUPL program, to get output programming file (.jed).
+The .jed file must be programmed into the GALs. This can be done using minipro:
+
+    $ minipro -p atf22v10c -w file.jed  
+
 
 
 ### Hardware verifications
