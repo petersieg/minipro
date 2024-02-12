@@ -29,7 +29,7 @@ Insert the chip with pin 1 (see the dot) pointing towards the lever of the ZIF s
 (_Image taken from the Windows software_)
 
 
-### Working with EEPROMs
+### Working with (E)EPROMs
 
 Read the contents of the EEPROM and save it to the file eeprom.bin:
 
@@ -42,6 +42,10 @@ Write the contents of the file eeprom.bin to the EEPROM:
 Verify that the EEPROM has the same contents as the file eeprom.bin:
 
 `$ minipro -p "AT28C16@DIP24" -m eeprom.bin`
+
+Blank check (-b)with pin check (-z):
+
+`$ minipro -p "M27C64@DIP28" -b -z`
 
 
 ### Working with AVR
