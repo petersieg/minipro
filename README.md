@@ -43,7 +43,7 @@ Verify that the EEPROM has the same contents as the file eeprom.bin:
 
 `$ minipro -p "AT28C16@DIP24" -m eeprom.bin`
 
-Blank check (-b)with pin check (-z):
+Blank check (-b) with pin check (-z) for good contact:
 
 `$ minipro -p "M27C64@DIP28" -b -z`
 
