@@ -9,7 +9,7 @@ This repository is my notes on how to use it with a [TL866II Plus](http://www.xg
 
 ## Building
 
-Build instructions for openSUSE have been added to the official repository and are no longer available here.
+Build instructions for openSUSE have been added to the official repository and are no longer available here. Otherwise:
 
 sudo apt-get install build-essential pkg-config git libusb-1.0-0-dev fakeroot debhelper dpkg-dev
 
