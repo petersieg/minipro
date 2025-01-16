@@ -11,6 +11,18 @@ This repository is my notes on how to use it with a [TL866II Plus](http://www.xg
 
 Build instructions for openSUSE have been added to the official repository and are no longer available here.
 
+sudo apt-get install build-essential pkg-config git libusb-1.0-0-dev fakeroot debhelper dpkg-dev
+
+git clone https://gitlab.com/DavidGriffith/minipro.git
+
+cd minipro
+
+fakeroot dpkg-buildpackage -b -us -uc
+
+sudo dpkg -i ../minipro_0.7.1_amd64.deb  --  (or whatever the actual version might be by the time)
+
+Instead of git and git clone, one can also just download zip archive, extract it and cd into directory.
+
 
 ## How to use
 
