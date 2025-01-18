@@ -175,6 +175,42 @@ The .jed file must be programmed into the GALs. This can be done using minipro:
     $ minipro -p atf22v10c -w file.jed  
 
 
+### Testing logic ICs
+
+```
+ich@ich-iMac27:~$ minipro -L 74153
+Found TL866II+ 04.2.132 (0x284)
+Device code: 19360167
+Serial code: TOEVAR0TKXQ9Y4I7Q206
+USB speed: 12Mbps (USB 1.1)
+74153
+ich@ich-iMac27:~$ minipro -p 74153 -T
+Found TL866II+ 04.2.132 (0x284)
+Device code: 19360167
+Serial code: TOEVAR0TKXQ9Y4I7Q206
+USB speed: 12Mbps (USB 1.1)
+      1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16
+0000: 1  0  0  1  0  1  L  G  L  1  0  1  0  1  1  V
+0001: 1  1  1  0  1  0  L  G  L  0  1  0  1  0  1  V
+0002: 0  0  1  0  1  0  L  G  L  1  0  1  0  0  1  V
+0003: 0  0  0  1  0  1  H  G  L  0  1  0  1  0  1  V
+0004: 0  0  0  1  0  1  L  G  L  1  0  1  0  1  1  V
+0005: 0  1  1  0  1  0  H  G  L  0  1  0  1  1  1  V
+0006: 0  1  1  0  1  0  L  G  L  1  0  1  0  0  1  V
+0007: 0  1  0  1  0  1  H  G  L  0  1  0  1  0  1  V
+0008: 0  1  0  1  0  1  L  G  L  1  0  1  0  1  1  V
+0009: 0  1  1  0  1  0  H  G  L  0  1  0  1  1  1  V
+0010: 1  0  0  1  0  1  L  G  L  0  1  0  1  0  0  V
+0011: 1  0  1  0  1  0  L  G  H  1  0  1  0  0  0  V
+0012: 1  0  0  1  0  1  L  G  L  1  0  1  0  1  0  V
+0013: 1  0  1  0  1  0  L  G  H  0  1  0  1  1  0  V
+0014: 1  1  0  1  0  1  L  G  L  1  0  0  1  0  0  V
+0015: 1  1  1  0  1  0  L  G  H  0  1  1  0  0  0  V
+0016: 1  1  0  1  0  1  L  G  L  1  0  1  0  1  0  V
+0017: 1  1  1  0  1  0  L  G  H  0  1  0  1  1  0  V
+Logic test successful.
+ich@ich-iMac27:~$
+```
 
 ### Hardware verifications
 
