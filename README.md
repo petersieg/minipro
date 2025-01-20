@@ -19,7 +19,7 @@ cd minipro
 
 fakeroot dpkg-buildpackage -b -us -uc
 
-sudo dpkg -i ../minipro_0.7.1_amd64.deb  --  (or whatever the actual version might be by the time)
+sudo dpkg -i ../minipro_0.7.1_amd64.deb  --  (or whatever the actual version might be by at the time - find resulting deb package here in repo)
 
 Instead of git and git clone, one can also just download zip archive, extract it and cd into directory.
 
